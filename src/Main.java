@@ -2,22 +2,38 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-            String[] possibilities = {"Conversor de Moedas", "Conversor de Temperatura"};
-            String menu = JOptionPane.showInputDialog(
+            init();
+        }
+
+    public static void init(){
+        Object[] options = { "Confirmar", "Cancelar" };
+        int option = 0;
+        do {
+
+            String[] conversoes = {"Conversor de Moedas", "Conversor de Temperatura"};
+            Object auxiliar = JOptionPane.showInputDialog(
                             null,
                             "Menu\n",
                             "Escolha uma opção",
                             JOptionPane.PLAIN_MESSAGE,
                             null,
-                            possibilities,
-                            null)
-                    .toString();
+                            conversoes,
+                            null);
+            if (auxiliar != null) {
+                String menu = auxiliar.toString();
 
-            if (menu.equals("Conversor de Moedas")) {
-                Moedas moeda = new Moedas();
-            } else if (menu.equals("Conversor de Temperatura")) {
-                Temperaturas temperatura = new Temperaturas();
+                if (menu.equals("Conversor de Moedas")) {
+                    Moedas moeda = new Moedas();
+                    option = JOptionPane.showOptionDialog(null, "Clique Confirmar para continuar", "Informação", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+                } else if (menu.equals("Conversor de Temperatura")) {
+                    Temperaturas temperatura = new Temperaturas();
+                    option = JOptionPane.showOptionDialog(null, "Clique Confirmar para continuar", "Informação", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+                } else {
+                    option = 1;
+                }
+            } else {
+                option = JOptionPane.showOptionDialog(null, "Clique Confirmar para continuar", "Informação", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
             }
-
+        } while (option == 0);
     }
 }
