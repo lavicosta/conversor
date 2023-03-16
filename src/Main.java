@@ -7,7 +7,7 @@ public class Main {
 
     public static void init(){
         Object[] options = { "Confirmar", "Cancelar" };
-        int option = 0;
+        int option;
         do {
 
             String[] conversoes = {"Conversor de Moedas", "Conversor de Temperatura"};
