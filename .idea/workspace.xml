@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ade65f8-0cf5-45ef-bce1-92d525cbf0ad" name="Changes" comment="tratamento de erro">
+    <list default="true" id="1ade65f8-0cf5-45ef-bce1-92d525cbf0ad" name="Changes" comment="retirando código antigo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Moedas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Moedas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +58,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678280658888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="separando opcoes de moedas">
+      <created>1678987791795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678987791795</updated>
+    </task>
+    <task id="LOCAL-00004" summary="retirando código antigo">
+      <created>1678988014703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678988014703</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +89,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="tratamento de erro" />
-    <option name="LAST_COMMIT_MESSAGE" value="tratamento de erro" />
+    <MESSAGE value="separando opcoes de moedas" />
+    <MESSAGE value="retirando código antigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="retirando código antigo" />
   </component>
 </project>

@@ -31,7 +31,7 @@ public class Moedas {
             if (auxiliar != null) {
                 String moeda1 = auxiliar.toString();
                 String moeda2 = "Real";
-                if (auxiliar.equals("Real")){
+                if (moeda1.equals("Real")){
                     Object auxiliar2 = JOptionPane.showInputDialog(
                             null,
                             "Menu\n",
@@ -50,19 +50,19 @@ public class Moedas {
 
                         if (moeda1.equals("Real")){
                             switch (moeda2){
-                                case "Dolar" -> JOptionPane.showMessageDialog(null, "US$" + valor * realpdolar);
-                                case "Euro" -> JOptionPane.showMessageDialog(null, "€" + valor * realpeuro);
-                                case "Libra Esterlina" -> JOptionPane.showMessageDialog(null, "£" + valor * realplibraes);
-                                case "Peso Argentino" -> JOptionPane.showMessageDialog(null, "$" + valor * realppesoarg);
-                                case "Peso Chileno" -> JOptionPane.showMessageDialog(null, "$" + valor * realppesochil);
+                                case "Dolar" -> JOptionPane.showMessageDialog(null, String.format("US$ %.2f", valor * realpdolar));
+                                case "Euro" -> JOptionPane.showMessageDialog(null, String.format("€ %.2f", valor * realpeuro));
+                                case "Libra Esterlina" -> JOptionPane.showMessageDialog(null, String.format("£ %.2f", valor * realplibraes));
+                                case "Peso Argentino" -> JOptionPane.showMessageDialog(null, String.format("$ %.2f", valor * realppesoarg));
+                                case "Peso Chileno" -> JOptionPane.showMessageDialog(null, String.format("$ %.2f", valor * realppesochil));
                             }
                         } else {
                             switch (moeda1){
-                                case "Dolar" -> JOptionPane.showMessageDialog(null, "R$" + valor * dolarpreal);
-                                case "Euro" -> JOptionPane.showMessageDialog(null, "R$" + valor * europreal);
-                                case "Libra Esterlina" -> JOptionPane.showMessageDialog(null, "R$" + valor * libraespreal);
-                                case "Peso Argentino" -> JOptionPane.showMessageDialog(null, "R$" + valor * pesoargpreal);
-                                case "Peso Chileno" -> JOptionPane.showMessageDialog(null, "R$" + valor * pesochilpreal);
+                                case "Dolar" -> JOptionPane.showMessageDialog(null, String.format("R$ %.2f", valor * dolarpreal));
+                                case "Euro" -> JOptionPane.showMessageDialog(null, String.format("R$ %.2f", valor * europreal));
+                                case "Libra Esterlina" -> JOptionPane.showMessageDialog(null, String.format("R$ %.2f", valor * libraespreal));
+                                case "Peso Argentino" -> JOptionPane.showMessageDialog(null, String.format("R$ %.2f", valor * pesoargpreal));
+                                case "Peso Chileno" -> JOptionPane.showMessageDialog(null, String.format("R$ %.2f", valor * pesochilpreal));
                             }
                         }
                     }
